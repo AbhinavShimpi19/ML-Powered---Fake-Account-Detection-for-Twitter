@@ -1,0 +1,127 @@
+/* Body background with gradient and animation */
+body {
+    background: linear-gradient(135deg, #ff7754, #feb47b);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Modern, clean container styling */
+.container {
+    width: 100%; /* Full width on small devices */
+    max-width: 400px; /* Fixed max width for larger screens */
+    padding: 2em; /* Consistent padding */
+    background-color: #fff;
+    border-radius: 15px; /* Increased border radius for smoother edges */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for better depth */
+    display: flex;
+    flex-direction: column; /* Column layout for stacking elements */
+    align-items: center; /* Center align elements */
+    gap: 20px; /* Spacing between elements */
+    position: relative;
+}
+
+/* Heading with a modern font and margin */
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 2.5em; /* Increased font size for better visibility */
+    font-weight: 700; /* Bold font weight for emphasis */
+    color: #333; /* Darker text color for better contrast */
+    margin: 0; /* Remove bottom margin */
+}
+
+
+label[for= "profiles"]{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    font-size: 0.7em; /* Increased font size for better visibility */
+    font-weight: 500; /* Bold font weight for emphasis */
+    color: #1b1b1b; /* Darker text color for better contrast */
+}
+
+/* Form styles to align with the modern look */
+form {
+    width: 100%; /* Full width to match container */
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+/* Input styling to match a modern look */
+input[type="text"] {
+    padding: 10px; /* Initial padding for comfort */
+    border: 1px solid #dadce0;
+    border-radius: 10px; /* More rounded corners */
+    font-size: 16px; /* Increased font size for better readability */
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    min-width: 100px; /* Set minimum width */
+    max-width: 100%; /* Full width on larger screens */
+    margin-bottom: 5px;
+}
+
+/* Expand input box as you type */
+input[type="text"]:focus {
+    padding-left: 20px; /* Add space to left */
+    padding-right: 20px; /* Add space to right */
+    width: calc(100% + 20px); /* Increase width while typing */
+    border-color: #ff7e5f; /* Color change on focus */
+}
+
+/* Button styled to look sleek and modern, with hover effects */
+button {
+    padding: 10px; /* Initial padding for comfort */
+    border-radius: 10px; /* Rounded corners for button */
+    font-size: 16px; /* Increased font size for better visibility */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: #ff7e5f; /* Solid background color */
+    color: white; /* White text for contrast */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+    min-width: 100px; /* Set minimum width */
+    margin: 10px 10px 10px 10px;
+}
+
+button:hover {
+    background-color: #feb47b; /* Lighter color on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Result section for displaying output */
+#results {
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: #333; /* Darker text for contrast */
+    margin-top: 20px;
+    border-radius: 10px; /* Rounded corners for results */
+    text-align: center;
+    padding: 15px; /* Added padding for better spacing */
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for results */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    .container {
+        padding: 2em; /* Consistent padding on smaller screens */
+    }
+
+    input[type="text"],
+    button {
+        font-size: 16px; /* Adjust font size for inputs and buttons */
+    }
+}
